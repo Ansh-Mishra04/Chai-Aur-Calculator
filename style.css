@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color:white */
+}
+
+.container{
+    background-color: rgb(248, 248, 248);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2, h1, h3{
+    color: black;
+}
+
+.calculator{
+    background-color: rgb(9, 0, 60);
+    width: 25%;
+    height:70%;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 20px;
+    
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgb(214, 214, 214);
+    height: 25%;
+    border-radius: 20px;
+    color: black;
+    padding: 20px;
+    justify-content: baseline;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0,0.3);
+
+}
+.display1{
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    width:100%;
+    border-bottom : 2px solid gray;
+    height: 50%;
+    padding: 0.5em;
+    overflow:hidden;
+}
+.display2{
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    width:100%;
+    height: 50%;
+    padding: 0.5em;
+    overflow: hidden;
+
+
+}
+#ans{
+    color: rgb(171, 171, 171);
+}
+
+.buttons{
+    margin-top: 20px;
+    /* background-color: white; */
+    height: 70%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(5,15%);
+    grid-template-columns: repeat(4,20%);
+    grid-gap: 20px;
+    padding: 20px;
+}
+button{
+    border-radius: 20px;
+    border: 2px solid black;
+    color:black;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0,0.3);
+}
+#plus{
+    grid-row-start:4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+
+}
+#equal{
+    
+    background-color: rgb(0, 169, 0);
+}
+#clear{
+    background-color: rgb(232, 203, 203);
+    color: red;
+}
+
+#backspace{
+    background-color: rgb(87, 85, 85);
+}
+.operations{
+    background-color: orange    ;
+}
+
+
+.social{
+    /* background-color: orange; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-brands{
+    font-size: 20px;
+}
