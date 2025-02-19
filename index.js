@@ -11,15 +11,12 @@ let answer='';
 button.addEventListener('click',(event)=>{
     if(event.target && event.target.classList.contains('num-btn'))
     input+=event.target.innerText
-    display1.innerText=input;
-    console.log(input);
-    
+    display1.innerText=input;    
 })
 
 equal.addEventListener('click',()=>{
     answer=eval(input);
-    ans.innerText=answer;
-    console.log(answer);
+    ans.innerText=answer;    
 })
 
 clear.addEventListener('click',()=>{
